@@ -43,13 +43,14 @@ const router = createRouter({
     },
     {
       path: "/repo/:id",
-      name: "SingleProject",
+      name: "SingleRepo",
       component: SingleRepo,
     },
     {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
       component: NotFound,
+      props: true,
     },
   ],
 });

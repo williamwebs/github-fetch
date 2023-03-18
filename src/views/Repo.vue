@@ -12,6 +12,7 @@ const getRepos = async () => {
       "https://api.github.com/users/williamwebs/repos"
     );
     repos = res.data;
+    console.log(repos);
     isLoading.value = false;
   } catch (error) {
     console.log(error);
@@ -36,7 +37,7 @@ const consoleParams = () => {
           class="repo__list"
           v-for="repo in repos"
           :key="repo.id"
-          :to="`/repo/${repo.name}`"
+          :to="{ name: 'SingleRepo', params: { id: repo.name } }"
         >
           <h2>{{ repo.name }}</h2>
           <small>{{ repo.visibility }}</small>
