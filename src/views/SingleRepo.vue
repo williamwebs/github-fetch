@@ -202,21 +202,7 @@ export default {
         color: var(--accent-color);
       }
     }
-    &.show-sidebar {
-      grid-template-columns: 90% 5%;
-      .details__body-main {
-        > * {
-          display: none;
-          opacity: 0;
-        }
-      }
-      aside {
-        > * {
-          display: initial;
-          opacity: 1;
-        }
-      }
-    }
+    
     aside {
       padding: 1rem;
       border-radius: 5px;
