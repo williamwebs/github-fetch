@@ -12,8 +12,7 @@ const getRepos = async () => {
       "https://api.github.com/users/williamwebs/repos"
     );
     repos = res.data;
-    isLoading = false;
-    console.log(repos);
+    isLoading.value = false;
   } catch (error) {
     console.log(error);
   }
