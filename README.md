@@ -1,5 +1,5 @@
 # Project Description
-[alt-guthub-repo](https://gumzo-d9397.web.app) is an AltSchool Third Semester Exam Solution that uses the [github api fetch link](https://api.github.com/users/williamwebs/repos) fetch repository datas from a user.
+[alt-github-repo](https://gumzo-d9397.web.app) is an AltSchool Third Semester Exam Solution that uses the [github api fetch link](https://api.github.com/users/williamwebs/repos) fetch repository datas from a user.
 
 This is a VueJs implementation of the project.
 
