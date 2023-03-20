@@ -10,7 +10,8 @@ const name = "th_ejouRney.xyz";
     </div>
     <p>
       I am a Frontend Developer with a passion for developing user-centric,
-      aesthetically appealing web solutions with ReactJs and VueJs.
+      aesthetically appealing web solutions with <span>ReactJs</span> and
+      <span>VueJs.</span>
     </p>
     <router-link to="repo" class="btn">check my repos</router-link>
   </section>
@@ -48,6 +49,20 @@ const name = "th_ejouRney.xyz";
     &:hover {
       background: #fff;
       color: #242424;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    .img__wrapper {
+      width: 100%;
+    }
+    p {
+      span {
+        color: rgb(132, 0, 255);
+        letter-spacing: .1rem;
+      }
     }
   }
 }

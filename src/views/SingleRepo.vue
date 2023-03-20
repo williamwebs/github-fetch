@@ -23,13 +23,6 @@ export default {
           this.isLoading = false;
         })
         .catch((err) => console.log(err.message));
-      // const res = await axios.get(
-      //   "https://api.github.com/users/williamwebs/repos/" + this.id
-      // );
-      // this.details = res.data;
-      // console.log(this.details);
-      // this.isLoading = false;
-      // console.log(this.details);
     };
     getRepos();
   },
@@ -202,18 +195,18 @@ export default {
         color: var(--accent-color);
       }
     }
-    
+
     aside {
       padding: 1rem;
       border-radius: 5px;
-      background-color: var(--secondary-color);
-      box-shadow: var(--box-shadow);
+      // background-color: var(--secondary-color);
+      // box-shadow: var(--box-shadow);
       display: flex;
       opacity: 1;
       flex-direction: column;
       img {
         width: 6rem;
-        border: 1px solid var(--primary-color);
+        // border: 1px solid var(--primary-color);
         border-radius: 50%;
       }
     }

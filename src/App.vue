@@ -1,12 +1,17 @@
 <script setup>
-let openMenu = false;
+let openMenu = true;
+
+const handleMenu = () => {
+  openMenu = !openMenu;
+  console.log(openMenu);
+};
 </script>
 
 <template>
   <div class="container">
     <nav id="nav">
       <router-link class="logo" to="/">WA</router-link>
-      <div class="menu__bar" @click="openMenu = !openMenu">Menu_</div>
+      <div class="menu__bar" @click="handleMenu">Menu_</div>
       <div class="menu__container" v-if="openMenu">
         <div class="menus">
           <ul>
@@ -23,7 +28,7 @@ let openMenu = false;
           <div class="socials">social links</div>
         </div>
 
-        <span @click="openMenu = !openMenu">close_</span>
+        <span @click="handleMenu">close_</span>
       </div>
     </nav>
 
@@ -38,8 +43,8 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  // position: relative;
 }
+
 #nav {
   display: flex;
   align-items: center;
@@ -69,6 +74,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    // .show {
+    //   display: block;
+    // }
+
+    // .hide {
+    //   display: none;
+    // }
 
     span {
       position: absolute;
@@ -107,6 +120,36 @@ body {
     font-size: 3rem;
     text-transform: uppercase;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+
+    #nav {
+      padding: 1rem 0;
+      .logo,
+      .menu__bar {
+        font-size: 2rem;
+      }
+
+      .menu__container {
+        padding: 0rem;
+        span {
+          top: 1.5rem;
+          right: 1.8rem;
+          font-size: 1.2rem;
+        }
+
+        ul {
+          li {
+            font-size: 1.5rem;
+            margin: 0.8rem;
+          }
+        }
+      }
+    }
   }
 }
 </style>
