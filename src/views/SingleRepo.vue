@@ -60,7 +60,7 @@ export default {
             <h4>William Anaza</h4>
             <div class="link">
               <a
-                href="http://github.com/williamanaza"
+                href="http://github.com/williamwebs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
