@@ -1,5 +1,5 @@
 <script setup>
-let openMenu = true;
+let openMenu = false;
 
 const handleMenu = () => {
   openMenu = !openMenu;
