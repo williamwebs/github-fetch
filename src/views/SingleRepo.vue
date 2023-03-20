@@ -48,7 +48,6 @@ export default {
 
 <template>
   <section class="details">
-    <h1>Single Project</h1>
     <div style="margin: auto; margin-bottom: 60px">
       <div v-if="isLoading" class="container__true">
         <naxCard class="card" v-for="details in 1" />
